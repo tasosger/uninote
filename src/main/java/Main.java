@@ -27,7 +27,7 @@ public class Main {
     }
 
     public static void main(String[] args) throws IOException {
-        String imagePath = "src/main/resources/uninote.jpg";
+        String imagePath = "src/main/resources/test4.jpg";
 
         String base64Image = encodeImage(imagePath);
 
@@ -43,7 +43,7 @@ public class Main {
 
         Map<String, Object> content = new HashMap<>();
         content.put("type", "text");
-        content.put("text", "What’s in this image?");
+        content.put("text", "What does the handwritten text say?");
 
         Map<String, Object> imageUrl = new HashMap<>();
         imageUrl.put("url", "data:image/jpeg;base64," + base64Image);
